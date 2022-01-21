@@ -1,11 +1,10 @@
 let rooms = [];
-const categories = ["Standart", "Standart/Casal", "Suíte", "Quarto Triplo"];
 
-for (let index = 1; index < 15; index++) {
+for (let index = 0; index < 16; index++) {
   rooms.push({
     id: index,
     title: `Quarto 1${index <= 9 ? "0" : ""}${index}`,
-    category: categories[Math.floor(Math.random() * (3 - 0 + 1) + 0)],
+    category: "Standart/Casal",
     pax: 3,
   });
 }

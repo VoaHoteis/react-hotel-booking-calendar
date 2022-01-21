@@ -1,5 +1,9 @@
 import React from "react";
 
+function AddBooking() {
+  return <div className="add-booking-button">+</div>;
+}
+
 function RoomDate(props) {
   const clickHandler = () => {
     props.onClick &&
@@ -16,7 +20,7 @@ function RoomDate(props) {
       style={{ width: props.cellWidth + "px" }}
       onClick={clickHandler}
     >
-      {props.children}
+      {!props.children.length ? <AddBooking /> : props.children}
     </td>
   );
 }

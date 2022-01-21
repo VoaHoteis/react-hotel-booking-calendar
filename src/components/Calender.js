@@ -85,10 +85,10 @@ class Calender extends Component {
     });
 
     return (
-      <thead>
+      <thead className="bg-gray-50">
         <tr>
-          <th>
-            <div className="text-right">UHs / Mês</div>
+          <th className="text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
+            <div className="text-center text-xs">UHs / Mês</div>
           </th>
           {datesHtml}
         </tr>
@@ -113,14 +113,13 @@ class Calender extends Component {
       return this.renderRooms(room);
     });
 
-    return <tbody>{body}</tbody>;
+    return <tbody className="bg-white divide-y divide-gray-200">{body}</tbody>;
   }
 
   render() {
     let head = this.renderHeaderDate();
     let body = this.renderTableBody();
 
-    // create context, to make data available to other child components
     const contextValue = {
       data: this.state,
     };
@@ -133,7 +132,7 @@ class Calender extends Component {
       <CalendarContext.Provider value={contextValue}>
         <div className="font-sans r-calendar">
           <ScrollContainer className="scroll-container" ignoreElements="td">
-            <table className="r-calendar-main-table">
+            <table className="min-w-full divide-y divide-gray-200 r-calendar-main-table">
               {head}
               {body}
             </table>

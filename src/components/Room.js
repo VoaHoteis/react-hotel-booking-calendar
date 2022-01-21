@@ -33,9 +33,9 @@ function Room(props) {
 
   return (
     <tr key={props.room.id}>
-      <td className="td-room-title">
-        <p className="text-sm">{props.room.category}</p>
-        <p className="text-xs">{props.room.title}</p>
+      <td className="td-room-title whitespace-nowrap">
+        <p className="text-sm">{props.room.title}</p>
+        <p className="text-xs">{props.room.category}</p>
       </td>
       {daysTd}
     </tr>
