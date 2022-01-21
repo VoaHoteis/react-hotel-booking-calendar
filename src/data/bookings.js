@@ -1,50 +1,56 @@
-export default  [
-    {
-      id:1,
-      room_id:2,
-      guest_name:"Aman",
-      objective:"work",
-      unit:2,
-      channel:"offline",
-      adult_count:2,
-      child_count:0,
-      guests:[
-        {
-          name:"Mr. Abdyl",
-          age:30
-        },
-        {
-          name:"Mrs. Agnesa",
-          age:25
-        }
-      ],
-      from_date:'2019-09-27',
-      to_date:'2019-09-30'
-    },
-    {
-      id:2,
-      room_id:4,
-      guest_name:"Aman",
-      objective:"tour",
-      unit:3,
-      channel:"online",
-      adult_count:2,
-      child_count:1,
-      guests:[
-        {
-          name:"Mr. Altin",
-          age:35
-        },
-        {
-          name:"Mrs. Zjarrta",
-          age:29
-        },
-        {
-          name:"Ms. Zerina",
-          age:3
-        }
-      ],
-      from_date:'2019-09-30',
-      to_date:'2019-10-03'
-    }
-  ];
+export default [
+  {
+    id: "234567981",
+    room_id: 1,
+    guest_name: "Giovanni Keppelen",
+    objective: "work",
+    unit: 2,
+    channel: "offline",
+    adult_count: 2,
+    child_count: 0,
+    guests: [
+      {
+        name: "Giovanni Keppelen",
+        age: 30,
+      },
+    ],
+    from_date: "Fri Jan 18 2022 21:00:00 GMT-0300",
+    to_date: "Fri Jan 23 2022 21:00:00 GMT-0300",
+  },
+  {
+    id: "987654321",
+    room_id: 3,
+    guest_name: "Gabriel Pireda",
+    objective: "work",
+    unit: 2,
+    channel: "offline",
+    adult_count: 2,
+    child_count: 0,
+    guests: [
+      {
+        name: "Giovanni Keppelen",
+        age: 30,
+      },
+    ],
+    from_date: "Fri Jan 28 2022 21:00:00 GMT-0300",
+    to_date: "Fri Feb 03 2022 21:00:00 GMT-0300",
+  },
+  {
+    id: "987654321",
+    room_id: 2,
+    guest_name: "Giovanni Keppelen",
+    objective: "work",
+    unit: 2,
+    channel: "offline",
+    adult_count: 2,
+    child_count: 0,
+    guests: [
+      {
+        name: "Giovanni Keppelen",
+        age: 30,
+      },
+    ],
+    from_date: "Fri Jan 21 2022 21:00:00 GMT-0300",
+    to_date: "Fri Jan 25 2022 21:00:00 GMT-0300",
+  },
+];

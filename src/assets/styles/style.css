@@ -1,0 +1,84 @@
+.r-calendar {
+  width: 100%;
+  height: 100%;
+}
+.r-calendar-main-table td {
+  line-height: 3em;
+  min-width: 40px;
+  max-width: 40px;
+  border: 1px solid #ddd;
+}
+
+.r-calendar-main-table tr td:first-child {
+  min-width: auto;
+  max-width: initial;
+}
+
+.r-calendar-main-table tr th:first-child,
+.r-calendar-main-table tr td:first-child {
+  position: sticky;
+  left: 0;
+  z-index: 2;
+  white-space: nowrap;
+}
+
+.r-calendar-main-table tr td:first-child,
+.r-calendar-main-table tr th:first-child {
+  background: rgba(143, 180, 204, 1) !important;
+}
+
+.r-calendar-main-table thead th {
+  cursor: col-resize;
+}
+
+.booking {
+  background: hsla(222, 31%, 65%, 1);
+  padding: 0px;
+  z-index: 1;
+  position: relative;
+  line-height: 3em;
+  color: #fff;
+  width: 100%;
+  height: 30px;
+  top: 15%;
+  left: 25%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.booking::after,
+.booking::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  width: 25px;
+  height: 100%;
+  transform: skewX(-28deg);
+  background-color: inherit;
+  z-index: -1;
+}
+
+.booking::after {
+  right: -15px;
+}
+
+.booking::before {
+  left: -10px;
+}
+
+.r-calendar .booking-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.r-calendar .booking.from-date-is-past-today {
+  justify-content: end;
+}
+
+.r-calendar .r-calendar-main-table tr td:first-child.td-room-title {
+  z-index: 2 !important;
+  background: #fff !important;
+}
